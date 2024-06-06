@@ -68,13 +68,11 @@ img {
     width: 100%;
 }
 
+/* To remove later? */
 .relative {
     position: relative;
 }
 
-.mb-0 {
-    margin-bottom: 0 !important;
-}
 /* To remove later? */
 .absolute {
     position: absolute;
@@ -83,6 +81,18 @@ img {
 /* To remove later */
 .text-center {
     text-align: center;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.p-20 {
+    padding: 20px;
 }
 
 /* LAYOUT CLASSES */
@@ -117,12 +127,15 @@ img {
     background-color: var(--uranian-blue);
 }
 
-/* to delete later */
-.background {
-    /* To remove later */
-    background-color: rgb(123, 192, 121);
+.bg-indigo {
+    background-color: var(--indigo);
 }
 
+.bg-white {
+    background-color: var(--white);
+}
+
+/* Other styles */
 .logo-size {
     width: 60px;
 }
@@ -157,6 +170,8 @@ button {
 
 
 
+
+
 .card-text {
     gap: 20px;
     margin: 20px;
@@ -164,7 +179,6 @@ button {
 
 .card-text h4 {
     color: var(--azure);
-    /* padding-bottom: 20px; */
 }
 
 .card-text p {
@@ -174,8 +188,14 @@ button {
     line-height: 25px;
 }
 
+.card-text i {
+    color: var(--azure);
+    font-size: 60px;
+}
+
 .button--secondary {
     color: var(--white);
+    padding: 10px 25px;
     align-self: flex-start;
     letter-spacing: 3px;
     font-weight: 600;
@@ -184,6 +204,8 @@ button {
 
 .button--secondary i {
     margin-right: 5px;
+    color: var(--white);
+    font-size: 13px;
 }
 
 .phone-img {
@@ -191,7 +213,42 @@ button {
     align-self: center;
 }
 
-.card-text i {
-    color: var(--azure);
-    font-size: 60px;
+
+
+
+
+.planning-section-top {
+    color: var(--white);
+}
+
+.planning-section-top img {
+    margin-bottom: 70px;
+}
+
+.planning-section-top h2 {
+    margin-bottom: 50px;
+}
+
+.planning-section-top p {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.planning-section-bottom img {
+    margin-bottom: 20px;
+}
+
+.planning-section-bottom h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.planning-section-bottom em {
+    margin-bottom: 20px;
+}
+
+.button--circle {
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
 }
