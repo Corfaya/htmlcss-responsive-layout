@@ -31,12 +31,7 @@ header {
 }
 
 main {
-    padding: 100px 0;
-}
-
-footer {
-    /* To remove later */
-    background-color: pink;
+    padding: 100px 0 0 0;
 }
 
 /* UTILITIES */
@@ -137,7 +132,12 @@ img {
     background-color: var(--white);
 }
 
-/* Other styles */
+.bg-charcoal {
+    background-color: var(--charcoal);
+}
+
+/* Other styles: */
+/* Header */
 .logo-size {
     width: 60px;
 }
@@ -250,14 +250,14 @@ button {
 }
 
 /* 3rd */
-.testimonial-text h3 {
+.testimonial-text h3, .free-beta h3 {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 16px;
     margin: 30px 0;
 }
 
-.testimonial-text h2 {
+.testimonial-text h2, .free-beta h2 {
     color: var(--indigo);
     font-size: 26px;
     margin-bottom: 30px;
@@ -288,7 +288,7 @@ button {
     gap: 20px;
 }
 
-#testimonials-section p {
+#testimonials-section p, .free-beta p {
     line-height: 25px;
 }
 
@@ -323,7 +323,7 @@ button {
     line-height: 25px;
 }
 
-.button--secondary--px-40 {
+.button--secondary--px {
     padding: 10px 40px;
 }
 
@@ -357,4 +357,54 @@ button {
 
 .button--about i {
     margin-right: 5px;
+}
+
+/* 6th */
+.free-beta, .free-beta h2, .free-beta a {
+    color: var(--white);
+}
+
+.free-beta h3 {
+    letter-spacing: 1px;
+}
+
+.free-beta h1 {
+    font-size: 24px;
+}
+
+.free-beta span {
+    color: var(--golden);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.free-beta p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.free-beta i {
+    font-size: 5px;
+    vertical-align: middle;
+}
+
+.button--secondary--color {
+    color: var(--indigo);
+}
+
+.button--secondary--p-lg {
+    padding: 15px 40px;
+}
+
+/* Footer */
+footer {
+    color: var(--white);
+}
+
+footer p:first-of-type {
+    margin: 50px 0;
+}
+
+footer a {
+    color: var(--indigo);
 }
