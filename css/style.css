@@ -34,8 +34,6 @@ main {
     padding: 100px 0 0 0;
 }
 
-
-
 /* LAYOUT CLASSES */
 .row {
     display: flex;
@@ -55,6 +53,7 @@ main {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 /* STYLES */
 /* Bg area */
 .bg-azure {
@@ -92,6 +91,10 @@ main {
     list-style-type: none;
 }
 
+.mobile-none {
+    display: none;
+}
+
 .hamburger:hover {
     color: var(--grey);
 }
@@ -107,6 +110,7 @@ header li {
 
 header li a {
     text-decoration: none;
+    color: var(--white);
 }
 
 button {
@@ -118,6 +122,17 @@ button {
 .button--primary {
     font-size: 15px;
     margin: 0 10px;
+    cursor: pointer;
+}
+
+.button--primary:hover {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.button--primary:active {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 /* 1st */
@@ -353,5 +368,3 @@ footer p:first-of-type {
 footer a {
     color: var(--indigo);
 }
-
-/* RESPONSIVENESS */
