@@ -1,0 +1,56 @@
+/* UTILITIES */
+.float-right {
+    float: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.j-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}

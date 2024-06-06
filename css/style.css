@@ -34,65 +34,7 @@ main {
     padding: 100px 0 0 0;
 }
 
-/* UTILITIES */
-.float-right {
-    float: right;
-}
 
-.flex {
-    display: flex;
-}
-
-.f-col {
-    flex-direction: column;
-}
-
-.j-space-between {
-    justify-content: space-between;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.d-none {
-    display: none;
-}
-
-img {
-    width: 100%;
-}
-
-/* To remove later? */
-.relative {
-    position: relative;
-}
-
-/* To remove later? */
-.absolute {
-    position: absolute;
-}
-
-/* To remove later */
-.text-center {
-    text-align: center;
-}
-
-.m-0 {
-    margin: 0 !important;
-}
-
-.m-20 {
-    margin: 20px;
-}
-
-.mb-0 {
-    margin-bottom: 0 !important;
-}
-
-.p-20 {
-    padding: 20px;
-}
 
 /* LAYOUT CLASSES */
 .row {
@@ -102,7 +44,6 @@ img {
 
 .container {
     width: 100%;
-    /* To remove later */
     padding: 10px 30px;
 }
 
@@ -112,7 +53,7 @@ img {
 
 .content {
     border-radius: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 /* STYLES */
 /* Bg area */
@@ -138,6 +79,11 @@ img {
 
 /* Other styles: */
 /* Header */
+.header-col {
+    display: flex;
+    align-items: center;
+}
+
 .logo-size {
     width: 60px;
 }
@@ -146,9 +92,12 @@ img {
     list-style-type: none;
 }
 
-.header-col {
-    display: flex;
-    align-items: center;
+.hamburger:hover {
+    color: var(--grey);
+}
+
+.hamburger:active {
+    color: var(--white);
 }
 
 header li {
@@ -168,15 +117,10 @@ button {
 
 .button--primary {
     font-size: 15px;
-    margin: 0px 10px
+    margin: 0 10px;
 }
 
 /* 1st */
-.card-text {
-    gap: 20px;
-    margin: 20px;
-}
-
 .card-text h4 {
     color: var(--azure);
 }
@@ -293,7 +237,7 @@ button {
 }
 
 #testimonials-section i {
-    margin: 0 5px
+    margin: 0 5px;
 }
 
 #testimonials-section h3 {
