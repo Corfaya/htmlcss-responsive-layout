@@ -83,6 +83,10 @@ img {
     text-align: center;
 }
 
+.m-0 {
+    margin: 0 !important;
+}
+
 .m-20 {
     margin: 20px;
 }
@@ -113,8 +117,6 @@ img {
 
 .content {
     border-radius: 20px;
-    /* To remove later */
-    border: 1px solid red;
     margin-bottom: 20px
 }
 /* STYLES */
@@ -161,6 +163,7 @@ header li a {
 button {
     border-radius: 30px;
     padding: 10px;
+    border: none;
 }
 
 .button--primary {
@@ -195,8 +198,7 @@ button {
     padding: 10px 25px;
     align-self: flex-start;
     letter-spacing: 3px;
-    font-weight: 600;
-    border: none;
+    font-weight: 600;    
 }
 
 .button--secondary i {
@@ -323,4 +325,36 @@ button {
 
 .button--secondary--px-40 {
     padding: 10px 40px;
+}
+
+/* 5th */
+#about h2 {
+    font-size: 40px;
+    color: var(--indigo);
+    margin-bottom: 20px;
+}
+
+#about p {
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+#about i.absolute {
+    color: var(--indigo);
+    font-size: 50px;
+    right: 0;
+}
+
+#about h3 {
+    font-size: 20px;
+    color: var(--indigo);
+    margin: 20px 0;
+}
+
+.button--about {
+    color: var(--white);
+}
+
+.button--about i {
+    margin-right: 5px;
 }
