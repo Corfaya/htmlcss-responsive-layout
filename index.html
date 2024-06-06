@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -41,56 +42,46 @@
         <!-- 1st container -->
         <div class="container">
             <div class="row">
-                <div class="col-100 col-lg-66">
-                    <div class="content card-text bg-uranianblue flex f-col text-center p-20 gap-20 pb-0">
-                        <!-- <div class="card-text flex f-col m-20 mb-0"> -->
-                            <h4>Get a demo application</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
-                                necessitatibus hic neque illum</p>
-                            <button class="button--secondary bg-azure"><i class="fa-brands fa-apple"></i>App
-                                Store</button>
-                            <img class="phone-img" src="./img/phone.png" alt="A phone's picture">
-                        <!-- </div> -->
+                <div class="col-100 col-md-66">
+                    <div class="content card-text bg-uranianblue flex f-col p-20 gap-20 pb-0">
+                        <h4>Get a demo application</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
+                            necessitatibus hic neque illum</p>
+                        <button class="button--secondary bg-azure"><i class="fa-brands fa-apple"></i>App
+                            Store</button>
+                        <img class="phone-img" src="./img/phone.png" alt="A phone's picture">
                     </div>
                 </div>
-                <div class="col-100 col-lg-33">
-                    <div class="content card-text bg-uranianblue flex f-col text-center p-20 gap-20">
-                        <!-- <div class="card-text   "> -->
-                            <i class="fa-solid fa-file-code"></i>
-                            <h4>Clean code</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
-                                necessitatibus hic neque illum</p>
-                        <!-- </div> -->
+                <div class="col-100 col-md-33 flex f-col">
+                    <div class="content card-text bg-uranianblue flex f-col text-center p-20 gap-20 f-basis-100">
+                        <i class="fa-solid fa-file-code"></i>
+                        <h4>Clean code</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
+                            necessitatibus hic neque illum</p>
                     </div>
                 </div>
-                <div class="col-100 col-lg-33">
+                <div class="col-100 col-md-33">
                     <div class="content card-text bg-uranianblue flex f-col text-center p-20 gap-20">
-                        <!-- <div class="card-text flex f-col text-center m-20"> -->
-                            <i class="fa-solid fa-compass-drafting"></i>
-                            <h4>Web design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
-                                necessitatibus hic neque illum</p>
-                        <!-- </div> -->
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h4>Web design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
+                            necessitatibus hic neque illum</p>
                     </div>
                 </div>
-                <div class="col-100 col-lg-33">
+                <div class="col-100 col-md-33">
                     <div class="content card-text bg-uranianblue flex f-col text-center p-20 gap-20">
-                        <!-- <div class="card-text flex f-col text-center m-20"> -->
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <h4>Development</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
-                                necessitatibus hic neque illum</p>
-                        <!-- </div> -->
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h4>Development</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
+                            necessitatibus hic neque illum</p>
                     </div>
                 </div>
-                <div class="col-100 col-lg-33">
+                <div class="col-100 col-md-33">
                     <div class="content card-text bg-uranianblue flex f-col text-center p-20 gap-20">
-                        <!-- <div class="card-text flex f-col text-center m-20"> -->
-                            <i class="fa-solid fa-bullhorn"></i>
-                            <h4>Branding</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
-                                necessitatibus hic neque illum</p>
-                        <!-- </div> -->
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h4>Branding</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda provident
+                            necessitatibus hic neque illum</p>
                     </div>
                 </div>
             </div>
@@ -137,31 +128,37 @@
                 <div class="col-100">
                     <div id="testimonials-section" class="content bg-indigo flex f-col p-20 text-center">
                         <div class="object-fit"><img src="./img/testimonial1.jpg" alt="Testimonial1"></div>
-                        <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Fuga odio nisi sapiente accusamus impedit laborum vero ut quisquam architecto, sequi,
-                            commodi doloremque, aut quibusdam illo. Et, excepturi molestiae. Nisi, qui.<i
-                                class="fa-solid fa-quote-right"></i></p>
-                        <h3>Nat Reynolds</h3>
+                        <div class="flex f-col gap-20 f-basis-70">
+                            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Fuga odio nisi sapiente accusamus impedit laborum vero ut quisquam architecto, sequi,
+                                commodi doloremque, aut quibusdam illo. Et, excepturi molestiae. Nisi, qui.<i
+                                    class="fa-solid fa-quote-right"></i></p>
+                            <h3>Nat Reynolds</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="col-100">
                     <div id="testimonials-section" class="content bg-indigo flex f-col p-20">
                         <div class="object-fit"><img src="./img/testimonial2.jpg" alt="Testimonial2"></div>
-                        <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Fuga odio nisi sapiente accusamus impedit laborum vero ut quisquam architecto, sequi,
-                            commodi doloremque, aut quibusdam illo. Et, excepturi molestiae. Nisi, qui.<i
-                                class="fa-solid fa-quote-right"></i></p>
-                        <h3>Celia Almeda</h3>
+                        <div class="flex f-col gap-20 f-basis-70">
+                            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Fuga odio nisi sapiente accusamus impedit laborum vero ut quisquam architecto, sequi,
+                                commodi doloremque, aut quibusdam illo. Et, excepturi molestiae. Nisi, qui.<i
+                                    class="fa-solid fa-quote-right"></i></p>
+                            <h3>Celia Almeda</h3>
+                        </div>
                     </div>
                 </div>
                 <div class="col-100">
                     <div id="testimonials-section" class="content bg-indigo flex f-col p-20">
                         <div class="object-fit"><img src="./img/testimonial3.jpg" alt="Testimonial3"></div>
-                        <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Fuga odio nisi sapiente accusamus impedit laborum vero ut quisquam architecto, sequi,
-                            commodi doloremque, aut quibusdam illo. Et, excepturi molestiae. Nisi, qui.<i
-                                class="fa-solid fa-quote-right"></i></p>
-                        <h3>Bob Roberts</h3>
+                        <div class="flex f-col gap-20 f-basis-70">
+                            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Fuga odio nisi sapiente accusamus impedit laborum vero ut quisquam architecto, sequi,
+                                commodi doloremque, aut quibusdam illo. Et, excepturi molestiae. Nisi, qui.<i
+                                    class="fa-solid fa-quote-right"></i></p>
+                            <h3>Bob Roberts</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,7 +231,7 @@
         <!-- 5th container -->
         <div id="about" class="container">
             <div class="row">
-                <div class="col-100 col-lg-33">
+                <div class="col-100 col-md-50">
                     <div class="content">
                         <h2>About Us</h2>
                         <p>Sample text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, illo maiores
@@ -246,7 +243,7 @@
                             dolore velit molestias nihil odio tempora necessitatibus!</p>
                     </div>
                 </div>
-                <div class="col-100 col-lg-33">
+                <div class="col-100 col-md-50 pt-50">
                     <div class="content">
                         <div class="object-fit m-0 relative"><img src="./img/about.jpg" alt="About"><i
                                 class="fa-solid fa-quote-left absolute"></i></div>
@@ -261,7 +258,7 @@
 
         <!-- 6th container -->
         <section class="bg-indigo">
-            <div class="container">
+            <div class="container container-md">
                 <div class="row">
                     <div class="col-100">
                         <div class="content free-beta text-center">
@@ -283,7 +280,7 @@
 
     <!-- FOOTER -->
     <footer class="bg-charcoal">
-        <div class="container">
+        <div class="container container-md">
             <div class="content text-center">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptates architecto
                     possimus velit?</p>
