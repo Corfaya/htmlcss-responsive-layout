@@ -141,4 +141,10 @@
     #about h2 {
         margin-top: 0;
     }
+
+    /* BONUS DESKTOP START */
+    li:hover .d-none {
+        display: block;
+    }
+    /* BONUS DESKTOP END */
 }

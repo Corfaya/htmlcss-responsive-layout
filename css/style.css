@@ -17,6 +17,10 @@
     --charcoal: #333333;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-family);
     cursor: default;
@@ -97,13 +101,50 @@ main {
     display: none;
 }
 
+.hamburger {
+    cursor: pointer;
+}
+
 .hamburger:hover {
-    color: var(--grey);
+    color: var(--uranian-blue);
 }
 
 .hamburger:active {
     color: var(--white);
 }
+
+/* BONUS MOBILE START */
+    .dropdown-mobile {
+        font-family: var(--font-family);
+        font-size: 18px;
+        right: -30px;
+        z-index: 2;
+        margin: 20px 0;
+        min-width: 120px;
+        font-weight: 600;        
+        background-color: var(--uranian-blue);
+        border: 1px solid var(--charcoal);
+        border-radius: 10px 0 0 10px;
+    }
+
+    .dropdown-mobile a {
+        text-decoration: none;
+        color: var(--charcoal);
+    }
+
+    .dropdown-mobile>p {        
+        padding: 20px;
+        border-top: 1px solid var(--charcoal);
+    }
+
+    .dropdown-mobile>p:first-child {
+        border: none;
+    }
+
+    .hamburger:hover .d-none {
+        display: block;
+    }
+/* BONUS MOBILE END */
 
 header li {
     margin: 10px;
@@ -114,6 +155,34 @@ header li a {
     text-decoration: none;
     color: var(--white);
 }
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+/* BONUS DESKTOP START */
+.dropdown-desktop {
+    z-index: 2;
+    min-width: 60px;
+    margin: 10px 0;
+    color: var(--charcoal);
+    background-color: var(--uranian-blue);
+    font-weight: 600;
+    border: 1px solid var(--charcoal);
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-desktop>p {
+    padding: 10px;
+    cursor: pointer;
+    border-top: 1px solid var(--charcoal);
+}
+
+.dropdown-desktop>p:first-child {
+    border: none;
+}
+
+/* BONUS DESKTOP END */
 
 button {
     border-radius: 30px;

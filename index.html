@@ -22,13 +22,32 @@
                     <img class="logo-size" src="./img/logo.png" alt="Logo">
                 </div>
                 <div class="header-col">
-                    <div class="float-right desktop-none">
-                        <i class="fa-solid fa-bars hamburger"></i>
+                    <div class="float-right desktop-none relative">
+                        <i class="fa-solid fa-bars hamburger">
+                            <div class="absolute dropdown-mobile d-none">
+                                <p><a href="#planning">Planning</a></p>
+                                <p><a href="#testimonials">Testimonials</a></p>
+                                <p><a href="#benefits">Features</a></p>
+                                <p><a href="#about">About Us</a></p>
+                            </div>
+                        </i>
                     </div>
                     <ul class="list-style-none mobile-none">
-                        <li><a href="#planning">Planning</a></li>
+                        <li class="relative"><a href="#planning">Planning</a>
+                        <div class="absolute dropdown-desktop d-none">
+                            <p>Strategic Planning</p>
+                            <p>App Development</p>
+                        </div></li>
                         <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#benefits">Features</a></li>
+                        <li class="relative"><a href="#benefits">Features</a>
+                        <div class="absolute dropdown-desktop d-none">
+                            <p>Hight Quality</p>
+                            <p>Creative Team</p>
+                            <p>Amazing Results</p>
+                            <p>Best Pricing</p>
+                            <p>Innovations</p>
+                            <p>24/7 Support</p>
+                        </div></li>
                         <li><a href="#about">About Us</a></li>
                     </ul>
                     <button class="button--primary mobile-none">Get Started</button>
