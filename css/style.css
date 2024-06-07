@@ -189,6 +189,10 @@ button {
     line-height: 25px;
 }
 
+.planning-section-bottom {
+    border-radius: 40px;
+}
+
 .planning-section-bottom img {
     margin-bottom: 20px;
 }
@@ -242,20 +246,20 @@ button {
     border-radius: 50%;
 }
 
-#testimonials-section {    
+.testimonials-section {    
     color: var(--white);
     gap: 20px;
 }
 
-#testimonials-section p, .free-beta p {
+.testimonials-section p, .free-beta p {
     line-height: 25px;
 }
 
-#testimonials-section i {
+.testimonials-section i {
     margin: 0 5px;
 }
 
-#testimonials-section h3 {
+.testimonials-section h3 {
     text-transform: uppercase;
 }
 

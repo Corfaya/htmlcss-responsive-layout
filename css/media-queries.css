@@ -30,7 +30,7 @@
         font-size: 30px;
     }
 
-    #testimonials-section {
+    .testimonials-section {
         flex-direction: row;
     }
 
@@ -77,10 +77,6 @@
         display: none;
     }
 
-
-
-
-
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -89,5 +85,13 @@
     .container-lg {
         max-width: 50%;
         margin: 0 auto;
+    }
+
+    .col-md-66>.card-text {
+        flex-direction: row;
+    }
+
+    .phone-img {
+        align-self: flex-end;
     }
 }
