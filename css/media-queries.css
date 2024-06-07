@@ -34,6 +34,10 @@
         flex-direction: row;
     }
 
+    .text-start-tablet {
+        text-align: start;
+    }
+
     .f-basis-70 {
         flex-basis: 70%;
     }
@@ -78,7 +82,7 @@
     }
 
     .container {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -87,11 +91,54 @@
         margin: 0 auto;
     }
 
+    .container-800 {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
     .col-md-66>.card-text {
         flex-direction: row;
     }
 
+    .col-lg-33 {
+        width: calc(100% / 3 - 10px);;
+    }
+
+    .col-lg-70 {
+        width: calc(70% - 60px);
+    }
+
+    .col-lg-30 {
+        width: 30%;
+        padding-top: 0;
+    }
+
     .phone-img {
         align-self: flex-end;
+    }
+
+    .nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .planning-section-bottom {
+        margin-top: 120px;
+    }
+
+    .gap-30 {
+        gap: 30px;
+    }
+
+    .planning-section-top h2 {
+        font-size: 30px;
+    }
+
+    .benefits-section h2, #about h2 {
+        font-size: 50px;
+    }
+
+    #about h2 {
+        margin-top: 0;
     }
 }
