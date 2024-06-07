@@ -19,6 +19,7 @@
 
 body {
     font-family: var(--font-family);
+    cursor: default;
 }
 
 /* BODY SECTIONS */
@@ -85,6 +86,7 @@ main {
 
 .logo-size {
     width: 60px;
+    cursor: pointer;
 }
 
 .list-style-none {
@@ -117,12 +119,12 @@ button {
     border-radius: 30px;
     padding: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .button--primary {
     font-size: 15px;
-    margin: 0 10px;
-    cursor: pointer;
+    margin: 0 10px;    
 }
 
 .button--primary:hover {
@@ -152,12 +154,25 @@ button {
     font-size: 60px;
 }
 
+.card-text:hover {
+    box-shadow: 3px 3px var(--indigo);
+}
+
 .button--secondary {
     color: var(--white);
     padding: 10px 25px;
     align-self: flex-start;
     letter-spacing: 3px;
     font-weight: 600;    
+}
+
+.button--secondary:hover {
+    background-color: var(--grey);
+    box-shadow: 1px 1px 10px var(--grey)
+}
+
+.button--secondary:active {
+    background-color: var(--indigo);
 }
 
 .button--secondary i {
@@ -190,7 +205,11 @@ button {
 }
 
 .planning-section-bottom {
-    border-radius: 40px;
+    border-radius: 40px;    
+}
+
+.planning-section-bottom:hover {
+    box-shadow: 3px 3px var(--golden);
 }
 
 .planning-section-bottom img {
@@ -251,6 +270,10 @@ button {
     gap: 20px;
 }
 
+.testimonials-section:hover {
+    box-shadow: 3px 3px 2px var(--grey);
+}
+
 .testimonials-section p, .free-beta p {
     line-height: 25px;
 }
@@ -272,6 +295,10 @@ button {
 .benefits-section {
     color: var(--indigo);
     gap: 30px;
+}
+
+.benefits-section:hover {
+    box-shadow: 3px 3px var(--golden);
 }
 
 .benefits-section h2 {
@@ -319,6 +346,15 @@ button {
     color: var(--white);
 }
 
+.button--about:hover {
+    box-shadow: 1px 1px 10px var(--indigo);
+}
+
+.button--about:active {
+    background-color: var(--grey);
+    box-shadow: 1px 1px 10px var(--grey);
+}
+
 .button--about i {
     margin-right: 5px;
 }
@@ -354,6 +390,15 @@ button {
 
 .button--secondary--color {
     color: var(--indigo);
+}
+
+.button--secondary--color:hover {
+    background-color: var(--white);
+}
+
+.button--secondary--color:active {
+    background-color: var(--grey);
+    color: var(--white);
 }
 
 .button--secondary--p-lg {
